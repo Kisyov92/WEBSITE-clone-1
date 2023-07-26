@@ -133,3 +133,77 @@ header {
   font-style: italic;
   font-weight: 500;
 }
+
+/**************************/
+/* ABOUT */
+/**************************/
+
+.container {
+  margin: 0 2rem 2rem 2rem;
+  color: #333;
+}
+
+.z-pattern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-img-box {
+  width: 100%;
+}
+
+.about-text-box {
+  padding: 10rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 4.2rem;
+  line-height: 0.85;
+  word-spacing: -4px;
+
+  margin-bottom: 0.5rem;
+}
+.about-subheading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 4rem;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/**************************/
+/* STATISTICS */
+/**************************/
+
+.section-statistic {
+  width: 110rem;
+  margin: 3.2rem auto;
+
+  grid-column: span 2;
+}
+.statistics-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistic-num {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.statistic-info {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 500;
+}
