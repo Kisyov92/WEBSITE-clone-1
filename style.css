@@ -101,6 +101,11 @@ header {
   width: 10rem;
 }
 
+.logo-icon {
+  font-size: 7rem;
+  color: white;
+}
+
 .main-nav-list {
   list-style-type: none;
 
@@ -122,6 +127,7 @@ header {
 
 .header-title {
   font-size: 5.4rem;
+  letter-spacing: -2px;
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: 0.7;
@@ -161,13 +167,14 @@ header {
 
 .about-heading {
   font-size: 4.2rem;
-  line-height: 0.85;
+  letter-spacing: -2px;
+  line-height: 1;
   word-spacing: -4px;
 
   margin-bottom: 0.5rem;
 }
 .about-subheading {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   font-style: italic;
   margin-bottom: 4rem;
@@ -175,7 +182,6 @@ header {
 
 .about-text {
   font-size: 1.4rem;
-  text-align: center;
 }
 
 /**************************/
@@ -203,7 +209,202 @@ header {
   font-weight: 700;
 }
 .statistic-info {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-style: italic;
   font-weight: 500;
+}
+
+/**************************/
+/* STATISTICS */
+/**************************/
+
+.services {
+  font: #333;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  text-align: center;
+  padding: 5rem;
+  background-color: #f7f7f7;
+}
+
+.service-icon {
+  display: inline-block;
+  font-size: 10rem;
+  margin-bottom: 1rem;
+}
+.service-heading {
+  font-size: 4.2rem;
+  letter-spacing: -2px;
+  word-spacing: -4px;
+  margin-bottom: 0.5rem;
+}
+.service-text {
+  font-size: 1.4rem;
+}
+
+/**************************/
+/* TESTIMONIALS */
+/**************************/
+
+.section-testimonials {
+  text-align: center;
+  margin: 10rem 0;
+}
+
+.testimonial-heading {
+  font-size: 4.2rem;
+  letter-spacing: -2px;
+  word-spacing: -4px;
+  line-height: 1;
+}
+
+.testimonial-subheading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 5rem;
+}
+
+.testimonial-quote {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.testimonial-author {
+  font-size: 1.4rem;
+}
+
+/**************************/
+/* PORTFOLIO */
+/**************************/
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 5rem;
+}
+
+.portfolio-box-main {
+  background-color: #f7f7f7;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-box {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.portfolio-img {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+/**************************/
+/* CONTACT */
+/**************************/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  width: 75rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.form-label {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-btn {
+  background-color: #fff;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  color: #fff;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem 0;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-link {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.address {
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  margin-top: 1.1rem;
+  gap: 1.1rem;
+}
+
+.social-icon {
+  color: #7d7d7d;
+  font-size: 2.2rem;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  color: #7d7d7d;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
 }

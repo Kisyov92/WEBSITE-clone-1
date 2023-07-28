@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>design - 1</title>
 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -17,11 +19,12 @@
     <header>
       <div class="header-img-container">
         <div class="header-container">
-          <img
+          <!-- <img
             src="images/logo.png"
             class="logo"
             alt="The logo of the business"
-          />
+          /> -->
+          <i class="ph ph-camera logo-icon"></i>
           <nav class="main-nav">
             <ul class="main-nav-list">
               <li class="main-nav-link">Home</li>
@@ -82,10 +85,10 @@
           </div>
           <img
             class="about-img-box"
-            src="images/desk1-big.jpg"
+            src="images/books-big.jpg"
             alt="another picture of a desk"
           />
-          <section class="section-statistic">
+          <article class="section-statistic">
             <ul class="container statistics-list">
               <li class="statistic">
                 <span class="statistic-num">342</span>
@@ -104,7 +107,7 @@
                 <span class="statistic-info">Video hours</span>
               </li>
             </ul>
-          </section>
+          </article>
           <img
             class="about-img-box"
             src="images/desk1-big.jpg"
@@ -127,6 +130,218 @@
           </div>
         </div>
       </section>
+
+      <section class="section-services">
+        <div class="container services">
+          <div class="service">
+            <i class="ph ph-lightbulb service-icon"></i>
+            <h3 class="service-heading">Branding</h3>
+            <p class="service-text">
+              Focus infographic venture business model canvas gamification
+              ecosystem. Business plan gamification user experience low hanging
+              fruit twitter. Metrics research & development market paradigm
+              shift growth hacking disruptive user experience iPad social media
+              angel investor alpha.
+            </p>
+          </div>
+          <div class="service">
+            <i class="ph ph-magic-wand service-icon"></i>
+            <h3 class="service-heading">Web Design</h3>
+            <p class="service-text">
+              Focus infographic venture business model canvas gamification
+              ecosystem. Business plan gamification user experience low hanging
+              fruit twitter. Metrics research & development market paradigm
+              shift growth hacking disruptive user experience iPad social media
+              angel investor alpha.
+            </p>
+          </div>
+          <div class="service">
+            <i class="ph ph-image service-icon"></i>
+            <h3 class="service-heading">Graphic Design</h3>
+            <p class="service-text">
+              Focus infographic venture business model canvas gamification
+              ecosystem. Business plan gamification user experience low hanging
+              fruit twitter. Metrics research & development market paradigm
+              shift growth hacking disruptive user experience iPad social media
+              angel investor alpha.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="container">
+          <h3 class="testimonial-heading">
+            Our clients<br />
+            love our work
+          </h3>
+          <p class="testimonial-subheading">
+            But don't just take our word for it...
+          </p>
+
+          <figure>
+            <blockquote class="testimonial-quote">
+              “ABC Agency our the best. Not only did they deliver my work on
+              time, they even walked my dog when I was out of town”
+            </blockquote>
+            <figcaption class="testimonial-author">
+              A Smith - Neighbour
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-portfolio">
+        <div class="container portfolio">
+          <div class="portfolio-box-main">
+            <h2 class="about-heading">
+              Latest <br />
+              creations
+            </h2>
+            <p class="about-subheading">We make beautiful things</p>
+            <p class="about-text">
+              Focus infographic venture business model canvas gamification
+              ecosystem. Business plan gamification user experience low hanging
+              fruit twitter. Metrics research & development market paradigm
+              shift growth hacking.
+            </p>
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-1.jpg"
+              alt="picture of a project"
+            />
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-2.jpg"
+              alt="picture of a project"
+            />
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-3.jpg"
+              alt="picture of a project"
+            />
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-4.jpg"
+              alt="picture of a project"
+            />
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-5.jpg"
+              alt="picture of a project"
+            />
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-6.jpg"
+              alt="picture of a project"
+            />
+          </div>
+          <div class="portfolio-box">
+            <img
+              class="portfolio-img"
+              src="images/img-7.jpg"
+              alt="picture of a project"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="container contact">
+          <h2 class="about-heading">Write us a latter</h2>
+          <p class="about-subheading">We appreciate your ideas</p>
+
+          <form class="contact-form">
+            <label for="name" class="form-label">Name</label>
+            <input
+              class="form-input"
+              id="name"
+              type="text"
+              placeholder="Enter your full name"
+            />
+            <label for="email" class="form-label">Email</label>
+            <input
+              class="form-input"
+              id="email"
+              type="email"
+              placeholder="Enter your email address"
+            />
+            <label for="message" class="form-label">Your message</label>
+            <textarea
+              class="form-input text-area"
+              id="message"
+              cols="30"
+              rows="3"
+              placeholder="Enter text"
+            ></textarea>
+            <button class="form-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="section-footer">
+      <div class="container footer">
+        <div class="footer-social">
+          <i class="ph ph-camera logo-icon"></i>
+          <ul class="footer-nav social">
+            <li>
+              <a class="footer-link" href="#"
+                ><i class="ph ph-facebook-logo social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><i class="ph ph-instagram-logo social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><i class="ph ph-twitter-logo social-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>navigation</h3>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About</a></li>
+            <li><a class="footer-link" href="#">Services</a></li>
+            <li><a class="footer-link" href="#">Portfolio</a></li>
+            <li><a class="footer-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-address">
+          <h3>Address</h3>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St. <br />
+              2nd Floor <br />
+              San Francisco <br />
+              CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@business.com"
+                >hello@business.com</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
