@@ -14,24 +14,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
+    <header class="section-header">
       <div class="header-img-container">
-        <div class="header-container">
-          <!-- <img
-            src="images/logo.png"
-            class="logo"
-            alt="The logo of the business"
-          /> -->
+        <div class="header-nav">
           <i class="ph ph-camera logo-icon"></i>
           <nav class="main-nav">
             <ul class="main-nav-list">
-              <li class="main-nav-link">Home</li>
-              <li class="main-nav-link">About</li>
-              <li class="main-nav-link">Services</li>
-              <li class="main-nav-link">Portfolio</li>
-              <li class="main-nav-link">Contact</li>
+              <li><a class="main-nav-link" href="#">Home</a></li>
+              <li><a class="main-nav-link" href="#about">About</a></li>
+              <li><a class="main-nav-link" href="#services">Services</a></li>
+              <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a class="main-nav-link" href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -46,7 +43,7 @@
     </header>
 
     <main class="main">
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container z-pattern">
           <img
             class="about-img-box"
@@ -131,7 +128,7 @@
         </div>
       </section>
 
-      <section class="section-services">
+      <section class="section-services" id="services">
         <div class="container services">
           <div class="service">
             <i class="ph ph-lightbulb service-icon"></i>
@@ -169,7 +166,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="container">
           <h3 class="testimonial-heading">
             Our clients<br />
@@ -191,7 +188,7 @@
         </div>
       </section>
 
-      <section class="section-portfolio">
+      <section class="section-portfolio" id="portfolio">
         <div class="container portfolio">
           <div class="portfolio-box-main">
             <h2 class="about-heading">
@@ -258,7 +255,7 @@
         </div>
       </section>
 
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <div class="container contact">
           <h2 class="about-heading">Write us a latter</h2>
           <p class="about-subheading">We appreciate your ideas</p>
@@ -317,10 +314,10 @@
         <div class="footer-nav">
           <h3>navigation</h3>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About</a></li>
-            <li><a class="footer-link" href="#">Services</a></li>
-            <li><a class="footer-link" href="#">Portfolio</a></li>
-            <li><a class="footer-link" href="#">Contact</a></li>
+            <li><a class="footer-link" href="#about">About</a></li>
+            <li><a class="footer-link" href="#services">Services</a></li>
+            <li><a class="footer-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="footer-link" href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-address">

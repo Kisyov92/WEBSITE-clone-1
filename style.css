@@ -87,7 +87,7 @@ header {
   background-size: cover;
 }
 
-.header-container {
+.header-nav {
   padding-top: 2rem;
   padding-left: 12rem;
   margin-bottom: 30rem;
@@ -113,10 +113,18 @@ header {
   gap: 10rem;
 }
 
-.main-nav-link {
+.main-nav-link:link,
+.main-nav-link:visited {
   font-size: 1.3rem;
   text-transform: uppercase;
   color: #fff;
+  text-decoration: none;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  font-size: 1.3rem;
+  padding-bottom: 2px;
+  border-bottom: #fff solid 1px;
 }
 
 .header-message {
@@ -319,6 +327,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .contact-form {
@@ -336,6 +345,8 @@ header {
   width: 100%;
   padding: 1rem;
   margin-bottom: 4rem;
+  border-radius: 5px;
+  border: 1.5px solid #000;
 }
 
 .form-label {
@@ -350,6 +361,14 @@ header {
   background-color: #fff;
   padding: 1.5rem 3rem;
   font-size: 1.4rem;
+  border-radius: 5px;
+
+  transition: all 0.5s;
+}
+
+.form-btn:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /**************************/
@@ -407,4 +426,20 @@ header {
   font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 3rem;
+}
+
+/**************************/
+/* STYCKY HEADER */
+/**************************/
+
+.sticky .header-nav {
+  height: 8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(125, 125, 125, 0.7);
+
+  padding: 0;
+  padding-left: 5rem;
+  width: 100%;
 }
