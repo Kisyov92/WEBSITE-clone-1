@@ -85,15 +85,18 @@ header {
   height: 100%;
   background-image: url(images/mountain-big.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
 }
 
 .header-nav {
   padding-top: 2rem;
-  padding-left: 12rem;
-  margin-bottom: 30rem;
 
   display: flex;
   align-items: center;
+  padding-left: 3rem;
   gap: 5rem;
 }
 
@@ -128,7 +131,8 @@ header {
 }
 
 .header-message {
-  width: 120rem;
+  width: 100%;
+  padding: 0 5rem;
   text-align: right;
   color: #fff;
 }
@@ -168,7 +172,7 @@ header {
 }
 
 .about-text-box {
-  padding: 10rem;
+  padding: 10%;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -197,7 +201,7 @@ header {
 /**************************/
 
 .section-statistic {
-  width: 110rem;
+  width: 100%;
   margin: 3.2rem auto;
 
   grid-column: span 2;
@@ -300,7 +304,7 @@ header {
 
 .portfolio-box-main {
   background-color: #f7f7f7;
-  padding: 5rem;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -443,3 +447,10 @@ header {
   padding-left: 5rem;
   width: 100%;
 }
+
+/* @media (max-width: 1150px) {
+  .z-pattern {
+    display: flex;
+    flex-direction: column;
+  }
+} */
